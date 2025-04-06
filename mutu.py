@@ -5,61 +5,6 @@ import plotly.express as px
 from mftool import Mftool
 
 
-# Load local CSS
-def local_css():
-    st.markdown("""
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Cascadia+Code&display=swap');
-
-    html, body, [class*="css"]  {
-    font-family: 'Cascadia Code', monospace;
-    background: linear-gradient(135deg, #000000, #1d9db4);
-    color: white !important;
-}
-
-
-    .css-1d391kg, .css-1d3z3hw {
-        background: rgba(255, 255, 255, 0.05);
-        color: white !important;
-    }
-
-    h1, h2, h3, h4 {
-        color: white !important;
-    }
-
-    .dataframe td, .dataframe th {
-        color: white !important;
-        background-color: #1e1e1e !important;
-        border: 1px solid #444;
-    }
-
-    .custom-badge {
-        padding: 1rem;
-        border-radius: 0.75rem;
-        background: linear-gradient(45deg, #333, #555);
-        border-left: 0.4rem solid #00e676;
-        margin: 1rem 0;
-        color: white;
-        font-size: 1.1rem;
-        font-weight: 500;
-    }
-
-    .custom-badge span:first-child {
-        font-size: 1.5rem;
-        margin-right: 0.5rem;
-    }
-
-    .risk-label {
-        padding: 1rem;
-        border-radius: 0.75rem;
-        font-size: 1.3rem;
-        font-weight: bold;
-        margin: 1rem 0;
-        color: white;
-        display: inline-block;
-    }
-    </style>
-    """, unsafe_allow_html=True)
 
 # Custom badge panel
 def layman_panel(icon, text, color="#4CAF50"):

@@ -36,7 +36,7 @@ def assign_risk_level(volatility):
         return 'Ultra High Risk', '#F44336', '💥'
 
 # Initialization
-local_css()
+
 mf = Mftool()
 st.title("Mutual Fund Financial Dashboard")
 
